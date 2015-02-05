@@ -1,0 +1,56 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* ///// DESKTOP + LAPTOP - 980 pixels ///// */
+.contentArea {
+	max-width:960px;
+	width:96%;
+	margin-left: 2%;
+	margin-right: 2%;
+}
+
+.boxArea {
+	max-width:960px;
+	width:96%;
+	margin-left: 2%;
+	margin-right: 2%;
+}
+
+.boxLargeRight {
+	max-width:960px;
+	width: 100%;
+}
+
+.boxLargeLeft {
+	max-width:960px;
+	width: 100%;
+}
+
+.newsFeedHot {
+	max-width: 960px;
+	width:100%;
+}
+
+.newsFeedHotImg {
+	display:none;
+}
+
+.newsFeed {
+	max-width: 960px;
+	width:100%;
+}
+
+.newsFeedHotTxt {
+	max-width:960px;
+	width:100%;
+}
+
+.theMovement {
+	max-width: 960px;
+	width:100%;
+}
+
+.theMovementTxt {
+	max-width: 960px;
+	width:100%;
+}

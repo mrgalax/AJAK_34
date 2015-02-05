@@ -1,0 +1,179 @@
+/* SUNES CUSTOM ADDONS */
+
+.slideVideo {
+	position: relative;
+	//background-image:url(../images/opacity.png);/* TRANSPARENT BACKGROUND TO BETTER SEE TEXT */
+	background-image:url(../images/forestlight.png); /* LIGHT-GREEN BACKGROUND */
+	float: left;
+	width: 100%;
+	max-width: 960px;
+	//max-height: 320px;
+	height:100%;
+	//margin: 10px;
+	-webkit-border-top-left-radius: 6px;
+	-webkit-border-top-right-radius: 6px;
+	-moz-border-top-left-radius: 6px;
+	-moz-border-top-right-radius: 6px;
+	border-top-left-radius: 6px;
+	border-top-right-radius: 6px;
+	//border: 1px solid #fafafa;
+	text-shadow: 0px 2px 3px rgba(150, 150, 150, 1);
+}
+.slideBg {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	max-width: 960px;
+	//max-height: 320px;
+	-webkit-border-top-left-radius: 6px;
+	-webkit-border-top-right-radius: 6px;
+	-moz-border-top-left-radius: 6px;
+	-moz-border-top-right-radius: 6px;
+	border-top-left-radius: 6px;
+	border-top-right-radius: 6px;
+	//background-image: url(../images/slidegreen.png); /* SET SLIDER BACKGROUND IMAGE HERE, IF ANY IS WANTED */
+	background-size: contain;
+}
+.slideTxt {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	max-width: 960px;
+	//max-height: 320px;
+	background-color: #000;
+	-webkit-border-top-left-radius: 6px;
+	-webkit-border-top-right-radius: 6px;
+	-moz-border-top-left-radius: 6px;
+	-moz-border-top-right-radius: 6px;
+	border-top-left-radius: 6px;
+	border-top-right-radius: 6px;
+	color: #fafafa;
+}
+/* current slide settings */
+
+#slides {
+	display: none;
+}
+#slides img {
+	-webkit-border-top-left-radius: 6px;
+	-webkit-border-top-right-radius: 6px;
+	-moz-border-top-left-radius: 6px;
+	-moz-border-top-right-radius: 6px;
+	border-top-left-radius: 6px;
+	border-top-right-radius: 6px;
+	height: 100%;
+	width: 100%;
+}
+#slides .slidesjs-navigation {
+	margin-top: 5px;
+	margin-bottom: 5px;
+	margin-left: 25px;
+}
+a.slidesjs-next,  a.slidesjs-previous,  a.slidesjs-play,  a.slidesjs-stop {
+	background-image: url(../images/btns-next-prev.png);
+	background-repeat: no-repeat;
+	display: block;
+	width: 12px;
+	height: 18px;
+	overflow: hidden;
+	text-indent: -9999px;
+	float: left;
+	margin-right: 5px;
+}
+a.slidesjs-next {
+	margin-right: 10px;
+	background-position: -12px 0;
+}
+a:hover.slidesjs-next {
+	background-position: -12px -18px;
+}
+a.slidesjs-previous {
+	background-position: 0 0;
+}
+a:hover.slidesjs-previous {
+	background-position: 0 -18px;
+}
+a.slidesjs-play {
+	width: 15px;
+	background-position: -25px 0;
+}
+a:hover.slidesjs-play {
+	background-position: -25px -18px;
+}
+a.slidesjs-stop {
+	width: 18px;
+	background-position: -41px 0;
+}
+a:hover.slidesjs-stop {
+	background-position: -41px -18px;
+}
+.slidesjs-pagination {
+	margin: 7px 0 0;
+	float: right;
+	list-style: none;
+}
+.slidesjs-pagination li {
+	float: left;
+	margin: 0 1px;
+}
+.slidesjs-pagination li a {
+	display: block;
+	width: 13px;
+	height: 0;
+	padding-top: 13px;
+	background-image: url(/images/pagination.png);
+	background-position: 0 0;
+	float: left;
+	overflow: hidden;
+}
+.slidesjs-pagination li a.active,  .slidesjs-pagination li a:hover.active {
+	background-position: 0 -13px;
+}
+.slidesjs-pagination li a:hover {
+	background-position: 0 -26px;
+}
+/*#slides a:link,  #slides a:visited {
+	color: #333;
+}
+#slides a:hover,  #slides a:active {
+	color: #9e2020;
+}*/
+<!--
+End SlidesJS Optional-->
+<!--
+SlidesJS Required: These styles are required if you'd like a responsive slideshow
+-->
+ #slides {
+ display: none;
+}
+.container {
+	margin: 0 auto;
+}
+
+    /* For tablets & smart phones */
+    @media (max-width: 767px) {
+.container {
+	width: auto;
+}
+}
+
+    /* For smartphones */
+    @media (max-width: 480px) {
+.container {
+	width: auto;
+}
+}
+
+    /* For smaller displays like laptops */
+    @media (min-width: 768px) and (max-width: 979px) {
+.container {
+	width: auto;
+}
+}
+
+    /* For larger displays */
+    @media (min-width: 1200px) {
+.container {
+	width: 960px;
+}
+}

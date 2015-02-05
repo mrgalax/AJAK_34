@@ -1,0 +1,201 @@
+version .30
+
+fixed remove slider below 480px and add box w/ text & video link.
+
+fixed added several buttons with menu-style code.
+
+fixed re-style contact subpage to connect with main expander.
+
+fixed remove stylecode from contact page.
+
+fixed added caspers graphics to index.html.
+
+fixed install google web fonts via google API.
+
+fixed added .bottomBar at index.html as a test (for social media etc).
+
+
+WISHLIST spend more hours learning media queury & work on more mobile elements.
+
+WISHLIST add temporary feedback options for users of the new website.
+
+WISHLIST integrate social media.
+
+WISHLIST more time to co-work with Casper, creating custom graphics for various site elements.
+
+WISHLIST more time to get comfortable using NetBeans & JSF.
+
+WISHLIST find opensource or create pure html/css slider.
+
+
+version .29 >> .30
+
+fixed publisher name bug - box moving out of context.
+
+fixed bug on expand div @ contactpage, expanding beyond it's box (martin hated this bug;p).
+
+fixed slider - remove round borders / bg colors.
+
+fixed re-styled slider video div & text div.
+
+fixed add new pure html/css menu to all subpages.
+
+fixed add ie9 fix to all subpages.
+
+fixed add media query for slider (show txt below 480px).
+
+fixed add small amount of shadow to text in embedded video slide.
+
+
+version .27 >> .28
+
+fixed add gecko & webkit support for all box-shadow styles.
+
+fixed add gecko & webkit support for all box-radius styles.
+
+fixed redo netbank & skiftbank with unique colors (easy to change in menu.css).
+
+fixed new images with size indication.
+
+fixed create classes for slideBg, slideVideo & slideTxt (easier for mikkel to use slider).
+
+fixed remove hundreds of lines of commented style-code.
+
+fixed new neutral color scheme till Mikkel decide on colors.
+
+fixed mobile menu styling.
+
+fixed add default style for these tags: <p><h1><h2><h3><input>.
+
+fixed remove css reset file from all pages.
+
+fixed create mini-reset in default.css only for a few base elements (martin approval ?).
+
+
+version .26
+
+fixed prune images folder for excess unused material.
+
+fixed redo menu into pure html (remove javascript).
+
+fixed optimize style-code (menu.css 638 lines of code -> 188)
+
+fixed restyle sub-pages at contact into 2 columns.
+
+fixed add noscript with request to enable javascript.
+
+fixed td og tr styling for "prices listing page".
+
+fixed add link to prices.html at products page.
+
+fixed add Div's & containers to each TR & TD element (to set style & margins between each category).
+
+listed for Martin TODO fix so slider pauses when video is playing (Martin).
+
+listed TODO find fonts & add styles for diff variations (Mikkel).
+
+
+TODO remove javascript from contact page (will be version 27).
+
+TODO move leftover CSS code from html docs into css sheets & clear css sheets for excess comments.
+
+
+version .25
+
+fixed add mobile web solution without javascript (http://caniuse.com/css-mediaqueries).
+
+fixed solve bug in firefox & chrome regarding max-width media query, being 16 pixels off.
+
+fixed add slide with embedded video, background and text html.
+
+fixed combine contact & faq, into 1 button on the menu.
+
+fixed new search function & design - pure CSS.
+
+fixed newsfeeder, 4 divs, headline, publisher/date, article resume , full article text.
+
+fixed static menu - always visible.
+
+
+
+version .23 >> .24
+
+fixed create basic subpages for koncept, bevægelsen, produkter, kontakt.
+
+fixed add produkter with produkt test.
+
+fixed add slider to bevægelsen, with option for different slides.
+
+fixed look into style positioning & width bugs.
+
+fixed change products styling to better match the site.
+
+fixed re-do products submenu buttons to save space.
+
+
+
+version .22
+
+fixed add slider to index.html (works now!).
+
+fixed test html and custom image in slider.
+
+fixed test video playback in slider.
+
+fixed secondary menu style for footer.
+
+fixed reworked the footer area to a modern style.
+
+fixed example links in footer area.
+
+fixed newsfeed area (hot news).
+
+fixed newsfeed area (regular news).
+
+fixed the movement area.
+
+fixed added textured backgrounds for menu area and footer area (looks better than just plain color?).
+
+
+
+version .21 >> .22
+
+version .20
+
+fixed add slider to index.html.
+
+fixed z-index on bx-wrapper and headerMenu (avoids clipping).
+
+
+
+version .19
+
+fixed mobile width issue, white-space on right column side on iphone's is now gone.
+
+fixed 4 boxes - now they need graphics from casper & text from mikkel.
+
+fixed clear.div (martin feel better! no hax ;p) - now it's been worked into css.
+
+fixed temporary background colors on boxes & images in boxes.
+
+fixed menu split into 2 - with menu & netbank turning into 2 symbols on mobile device.
+
+fixed roll-over black on netbank & skiftbank by moving styling into the css sheet.
+
+fixed make skiftbank & netbank less color'ish (see if mikkel prefers this to the old). 
+
+fixed change mouseover javascript with pure css for image-swaps.
+
+fixed connect sub-mobile menu with button (no spacing if possible).
+
+fixed div box for logo and move styling to css.
+
+fixed move any existing style code from index.html to default.css (apart from 2 buttons).
+
+fixed replace mobile unicode symbols with lock & menu images.
+
+fixed re-hue <h3> tags (headlines) on the box's (see if mikkel prefer color or black headlines)
+
+fixed border-bottom on the header (menu area) & sub-menu's.
+
+fixed add green hue's to various elements, to see how green goes with white/grey.

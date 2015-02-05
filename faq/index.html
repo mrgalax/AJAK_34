@@ -1,0 +1,181 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<meta charset="utf-8">
+<title>Jquery Expand Collapse</title>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+	$(".toggle_container").hide();
+	$("h2.expand_heading").toggle(function(){
+		$(this).addClass("active"); 
+		}, function () {
+		$(this).removeClass("active");
+	});
+	$("h2.expand_heading").click(function(){
+		$(this).next(".toggle_container").slideToggle("slow");
+	});
+	$(".expand_all").toggle(function(){
+		$(this).addClass("expanded"); 
+		}, function () {
+		$(this).removeClass("expanded");
+	});
+	$(".expand_all").click(function(){
+		$(".toggle_container").slideToggle("slow");
+	});
+});
+</script>
+<style type="text/css">
+
+.prodWrapper {
+	max-width:960px;
+	min-width:320px;
+	width:100%;
+	margin: 0 auto;
+}
+
+.expand_top,.expand_wrapper {
+	width:100%;
+ //min-width:320px;
+ //max-width:960px;
+	padding:0px;
+	margin:0px 0px 5px 0px;
+	float:left;
+	font-size:0.7em;
+	font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+	background-color:#C7F8E6;
+}
+
+
+h2.expand_heading {
+ //padding: 0 0 0 20px;
+	margin: 0 0 5px 0;
+	background-color:#ccc;
+ //background: url(expand_collapse.png) no-repeat;
+	height: 38px;
+	line-height: 38px;
+	width: 100%;
+	font-size: 2em;
+	font-weight: normal;
+	float: left;
+	border-radius:6px;
+	-moz-box-shadow: 0 0 5px #888;
+	-webkit-box-shadow: 0 0 5px#888;
+	box-shadow: 0 0 5px #888;
+}
+.expand_all
+{
+cursor:default;
+}
+h2.expand_heading a {
+	color: #fff;
+	text-decoration: none;
+	display: block;
+}
+h2.expand_heading a:hover {
+	color: #000;
+}
+h2.expand_heading a img {
+	//margin-left:4px;
+	//margin-right:4px;
+	float:left;
+	padding:6px;
+	border:none;
+}
+
+h2.active {
+	background-position: left bottom;
+}
+.toggle_container {
+	margin: 0 0 5px;
+	padding: 0;
+	border-top: 1px solid #d6d6d6;
+	background: #ffffff;
+	overflow: hidden;
+	font-size: 1.2em;
+	clear: both;
+	-moz-box-shadow: 0 0 5px #888;
+	-webkit-box-shadow: 0 0 5px#888;
+	box-shadow: 0 0 5px #888;
+}
+.toggle_container .box {
+	padding: 20px;
+}
+.toggle_container .box p {
+	padding: 5px 0;
+	margin: 5px 0;
+}
+.toggle_container h3 {
+	font: 1.4em normal Georgia, "Times New Roman", Times, serif;
+	margin: 0 0 5px;
+	padding: 0 0 5px 0;
+	color:#000000;
+	border-bottom: 1px dotted #ccc;
+}
+.toggle_container img {
+	float: left;
+	margin: 10px 15px 15px 0;
+	padding: 5px;
+	//background: #ddd;
+	border: 1px solid #ccc;
+}
+.expand_all
+{
+	//width:116px;
+	//height:29px;
+	width:80px;
+	height:36px;
+	//background-color:#ccc;
+	//background:url(extra_buttons.png) no-repeat top left;
+	background-image:url(openAll.png);
+	//float:right;
+	cursor: pointer; 
+}
+.expanded
+{
+	//background-position:bottom left;
+	background-image:url(closeAll.png);
+}
+
+</style>
+
+</head>
+<body>
+
+<div class="prodWrapper">
+<div class="expand_wrapper">
+
+<div class="expand_top">
+<div class="expand_all"></div>
+</div>
+<br />
+<br />
+<br />
+
+	<h2 class="expand_heading"><a href="#"><img src="../images/email.png" alt="maerke" /><img src="../images/user_suit.png" alt="maerke" /><img src="../images/world.png" alt="maerke" />&#43; Produkt 1A - Fakta</a></h2>
+	
+	<div class="toggle_container">
+		<div class="box">
+			<h3>Produkt 1A - Nøgleord</h3>
+			
+			<p><img src="../images/flowerTwo.jpg" alt="flower" />Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. &hearts; Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>   
+		</div>
+	</div>
+	
+	<h2 class="expand_heading"><a href="#"><img src="../images/phone.png" alt="maerke" /><img src="../images/user_suit.png" alt="maerke" /><img src="../images/world.png" alt="maerke" />&#43; Produkt 1B - Fakta</a></h2>
+
+	<div class="toggle_container">
+		<div class="box">
+			<h3>Produkt 1B - Nøgleord</h3>
+		
+		<p><img src="../images/search.png" style="float:left" />Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+		<p>&hearts; Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+		</div>
+	</div>
+
+</div>
+</div>
+
+</body>
+</html>

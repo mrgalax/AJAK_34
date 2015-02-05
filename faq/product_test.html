@@ -1,0 +1,209 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<meta charset="utf-8">
+<title>Jquery Expand Collapse</title>
+<script type="text/javascript" src="scripts/jquery.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+	$(".toggle_container").hide();
+	$("h2.expand_heading").toggle(function(){
+		$(this).addClass("active"); 
+		}, function () {
+		$(this).removeClass("active");
+	});
+	$("h2.expand_heading").click(function(){
+		$(this).next(".toggle_container").slideToggle("slow");
+	});
+	$(".expand_all").toggle(function(){
+		$(this).addClass("expanded"); 
+		}, function () {
+		$(this).removeClass("expanded");
+	});
+	$(".expand_all").click(function(){
+		$(".toggle_container").slideToggle("slow");
+	});
+});
+</script>
+<style type="text/css">
+
+body {
+	background-color: #F2F2F2;
+}
+
+.prodWrapper {
+	max-width:960px;
+	min-width:320px;
+	width:100%;
+	margin: 0 auto;
+}
+.symbolWrapper {
+	background-color:#555;
+	width:20%;
+	min-width:100px;
+	float:right;
+	border-top-right-radius:6px;
+	border-bottom-left-radius:6px;
+}
+.symbolWrapper img {
+	margin-left:10px;
+}
+.expand_top,.expand_wrapper {
+	width:100%;
+ //min-width:320px;
+ //max-width:960px;
+	//padding:6px;
+	margin:0px 0px 5px 0px;
+	float:left;
+	font-size:1em;
+	font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+	background-color:#fff;
+	border-radius:6px;
+	border: 1px solid #777;
+	border-bottom:none;
+}
+
+h2.expand_heading {
+ //padding: 0 0 0 20px;
+	margin: 0 0 5px 0;
+	background-color:#555;
+ //background: url(expand_collapse.png) no-repeat;
+	height: 38px;
+	line-height: 38px;
+	width: 100%;
+	font-size: 1em;
+	font-weight: normal;
+	float: left;
+	border-radius:6px;
+	-moz-box-shadow: 0 0 5px #888;
+	-webkit-box-shadow: 0 0 5px#888;
+	box-shadow: 0 0 5px #888;
+}
+.expand_all
+{
+cursor:default;
+}
+h2.expand_heading a {
+	color: #fff;
+	text-decoration: none;
+	display: block;
+	text-align:center;
+	font-weight:bold;
+}
+h2.expand_heading a:hover {
+	color: #000;
+}
+h2.expand_heading a img {
+	//margin-left:4px;
+	//margin-right:4px;
+	float:left;
+	padding:6px;
+	border:none;
+}
+
+h2.active {
+	background-position: left bottom;
+}
+.toggle_container {
+	margin: 0 0 5px;
+	padding: 0;
+	border-top: 1px solid #d6d6d6;
+	background: #ffffff;
+	overflow: hidden;
+	font-size: 1em;
+	clear: both;
+	-moz-box-shadow: 0 0 5px #888;
+	-webkit-box-shadow: 0 0 5px#888;
+	box-shadow: 0 0 5px #888;
+}
+.toggle_container .box {
+	padding: 20px;
+}
+.toggle_container .box p {
+	padding: 5px 0;
+	margin: 5px 0;
+}
+.toggle_container h3 {
+	font: 1em normal Georgia, "Times New Roman", Times, serif;
+	margin: 0 0 5px;
+	padding: 0 0 5px 0;
+	color:#000000;
+	border-bottom: 1px dotted #ccc;
+}
+.toggle_container img {
+	float: right;
+	//margin: 10px 15px 15px 0;
+	margin-left:20px;
+	margin-bottom:20px;
+	padding: 4px;
+	//background: #ddd;
+	border: 1px solid #ccc;
+}
+.expand_all
+{
+	//width:116px;
+	//height:29px;
+	width:80px;
+	height:36px;
+	//background-color:#ccc;
+	//background:url(extra_buttons.png) no-repeat top left;
+	background-image:url(openAll.png);
+	//float:right;
+	cursor: pointer; 
+}
+.expanded
+{
+	//background-position:bottom left;
+	//background-image:url(closeAll.png);
+}
+
+</style>
+
+</head>
+<body>
+
+<div class="prodWrapper">
+<div class="expand_wrapper">
+<div class="symbolWrapper"><img src="images/medal.png" alt="symbol" width="36px" height="36px" title="rente-fri" /><img src="images/medal.png" alt="symbol" width="36px" height="36px" title="rente-fri" /><img src="images/medal.png" alt="symbol" width="36px" height="36px" title="rente-fri" /><img src="images/medal.png" alt="symbol" width="36px" height="36px" title="rente-fri" /></div>
+
+<h2 style="padding-left:20px">Visa / Dankort <!--<img src="../images/creditcard.png" alt="creditcard" height="8%" width="8%"  />--></h2>
+<hr style="border: 1px solid #777;"  />
+<p style="padding-left:15px; padding-right:15px;">" Verified by Visa" er sammen med "MasterCard Secure Code" en ny fælles sikkerhedsstandard for internationale betalingskort på nettet, som er udarbejdet af de internationale kortselskaber Visa og MasterCard.</p>
+<input style="float:right; position:relative; margin-right:15px; bottom:10px" type="button" name="Tilvælg" title="Tilvælg" value="Tilvælg &#1146;" />
+<div class="expand_top">
+<!--<div class="expand_all"></div>-->
+</div>
+	<h2 class="expand_heading"><a href="#">&nbsp;&#43; Prisoversigt</a></h2>
+	
+	<div class="toggle_container">
+		<div class="box">
+			<h3>Prisoversigt - Nøgleord</h3>
+			
+			<p><img src="images/creditcard.png" alt="flower" /> 
+Udstedelse af Visa/dankort   kr. 150,00<br /> 
+Årligt kortgebyr   kr. 150,00 <br /> 
+Hastebestillingsgebyr  kr. 75,00 <br />
+Spærring af Visa/Dankort i Danmark  <br />
+på kundens foranledning (bortkomst mm) kr. Gratis <br /> 
+Spærring på andelskassens foranledning -(misbrug) kr. 150,00 <br /> 
+Genbestilling af pinkode  kr. 50,00 </p>   
+		</div>
+	</div>
+	
+	<h2 class="expand_heading"><a href="#">&nbsp;&#43; Spærring af kort</a></h2>
+
+	<div class="toggle_container">
+		<div class="box">
+			<h3>Spærring af kort - Nøgleord</h3>
+		
+		<p><img src="images/search.png" />Ved mistanke om tab eller misbrug af betalingkort skal Andelskassen straks kontaktes. Spærring af betalingskort udenfor Andelskassens åbningstid kan ske til PBS på telefon 44 89 29 29.</p>
+		<p>&hearts; Spørgsmål og svar på brug af Visa/Dankort kan læses på PBS hjemmesiden:www.betaling.dk</p>
+		</div>
+	</div>
+
+</div>
+</div>
+
+</body>
+</html>
